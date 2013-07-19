@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Folders | Tutorial for Maddie]]></title>
+  <link href="http://Dillon-Benson.github.io/blog/categories/folders/atom.xml" rel="self"/>
+  <link href="http://Dillon-Benson.github.io/"/>
+  <updated>2013-07-18T22:11:25-04:00</updated>
+  <id>http://Dillon-Benson.github.io/</id>
+  <author>
+    <name><![CDATA[Dillon Benson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[how to use the terminal]]></title>
+    <link href="http://Dillon-Benson.github.io/blog/2013/07/18/how-to-use-the-terminal/"/>
+    <updated>2013-07-18T20:42:00-04:00</updated>
+    <id>http://Dillon-Benson.github.io/blog/2013/07/18/how-to-use-the-terminal</id>
+    <content type="html"><![CDATA[<p>Hey Maddie! Welcome to your first tutorial. Today you&rsquo;ll learn what a terminal is and how to use it. Simply, a terminal is where you enter commands that directly deal with a computer. It can be used to tell which files are in a folder, move files, rename files and folders, browse files and see what&rsquo;s in them, and so much more. By the way when you&rsquo;re using a terminal you call <strong>&ldquo;folders&rdquo;, &ldquo;directories&rdquo;</strong>. Programmers prefer terminals over your everyday windows because they&rsquo;re faster and more flexible with the ways you interact with a computer. Also without terminals there would be a significant decrease in performance of programs running on your computer. There are several different types of terminals. The most important difference between them is the operating system that uses it. For example Windows has their own special kind of terminal called DOS. While most other major operating system such as Mac OSX and Linux uses a UNIX based terminal that many people refer to as a Shell. Our primary focus will be on the UNIX Shell or for our purpose we&rsquo;ll just call it terminal.</p>
+
+<p>Before we can start using the terminal you have to know how to open it. I like to do it the fast way by holding Command and pressing space. When you do this you&rsquo;ll see a blue and white search bar appear at the top right of your screen that says &ldquo;Spotlight&rdquo;. When you see this, type ITerm and press enter. If that doesn&rsquo;t work you can just click on &ldquo;Finder&rdquo; and go to <strong>Applications > ITerm.</strong><br/>
+Either way you do it, you should see a window that pops up that looks something like this:<br/>
+<img src="/images/iterm-open.png"><br/>
+Right now you&rsquo;re in your &ldquo;home&rdquo; folder or as we call it your &ldquo;home&rdquo; directory. Test it out by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">echo </span>hello
+</span></code></pre></td></tr></table></div></figure></notextile></div><br/>
+and press enter.<br/>
+If you did this correctly you should see &ldquo;hello&rdquo; was outputted below the line you just typed. You just entered your first command! A command consists of a name (in this case &ldquo;echo&rdquo;) and 0 or more arguments (in this case &ldquo;hello&rdquo; being the only argument). As you can tell all the &ldquo;echo&rdquo; command does is, well, echo whatever it&rsquo;s arguments are. Always remember that a command won&rsquo;t execute or run until your press enter on your keyboard. Since this is your first day we&rsquo;re just going to mess around with the most frequently used commands. The ones I&rsquo;ll be teaching today are &lsquo;ls&rsquo;, &lsquo;cd&rsquo;, and &lsquo;mkdir&rsquo;. Let&rsquo;s start with ls by simply typing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+You should see a bunch of things that were output such as &ldquo;Downloads&rdquo;, &ldquo;Movies&rdquo;, &ldquo;Music&rdquo;, &ldquo;Documents&rdquo;, and most likely some other stuff. the &ldquo;ls&rdquo; command in this case taking 0 arguments simply shows all of the files and folders in a directory. It&rsquo;s purpose is to show what files and folders exist in a directory. That&rsquo;s kind of useful! And now let&rsquo;s use &ldquo;cd&rdquo;. No, it has nothing to do with CD&rsquo;s that contain music lol. &ldquo;cd&rdquo; is short for change directory. let&rsquo;s &ldquo;change directory&rdquo; to &ldquo;Downloads&rdquo; by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>Downloads
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+At this point you should be in the Downloads directory. This is where all the files you have downloaded are stored and remember you can see all these files by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>ls
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+So the &ldquo;cd&rdquo; command takes 1 argument. This argument should be the directory that you want to go in to and in our case that 1 argument was &ldquo;Downloads&rdquo;.
+To go back to the home directory simply type:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ../</span></code></pre></td></tr></table></div></figure></notextile></div>
+The &ldquo;../&rdquo; argument to &ldquo;cd&rdquo; takes you back one directory.<br/>
+And finally, for today, is the &ldquo;mkdir&rdquo; command. This is responsible for creating a new directory. This is just like creating a new folder by right-clicking on the finder window and selecting the &ldquo;Create a new folder&rdquo; option. Let&rsquo;s just create a directory called &ldquo;favs&rdquo; for purposed of demonstration. You can do this by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir favs
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+We can you this folder to put our favorite stuff in. If that&rsquo;s what you want to do. As you can see the &ldquo;mkdir&rdquo; command took 1 argument that specifies the name of the new directory that you want to create and in this situation we created a new directory named &ldquo;favs&rdquo;. We verify that by using the &ldquo;ls&rdquo; command and seeing the output of that contains &ldquo;favs&rdquo;. If you want you can even go inside your newly created directory by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd favs</span></code></pre></td></tr></table></div></figure></notextile></div>
+However it shouldn&rsquo;t be to surprising that a new directory won&rsquo;t have anything inside of it yet. You can once verify that by typing:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ls</span></code></pre></td></tr></table></div></figure></notextile></div>
+Which shows all files and folders in that directory (this time nothing will show up).</p>
+
+<p>Get ready for the next post where I show you how to delete files and folders, create new files, and show what&rsquo;s inside of a file. Thanks for reading. Hope to see you on here soon!</p>
+]]></content>
+  </entry>
+  
+</feed>
