@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Folders | Tutorial for Maddie]]></title>
   <link href="http://Dillon-Benson.github.io/blog/categories/folders/atom.xml" rel="self"/>
   <link href="http://Dillon-Benson.github.io/"/>
-  <updated>2013-07-18T22:11:25-04:00</updated>
+  <updated>2013-07-18T22:23:42-04:00</updated>
   <id>http://Dillon-Benson.github.io/</id>
   <author>
     <name><![CDATA[Dillon Benson]]></name>
@@ -49,15 +49,15 @@ And finally, for today, is the &ldquo;mkdir&rdquo; command. This is responsible 
 <div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='bash'><span class='line'>mkdir favs
 </span></code></pre></td></tr></table></div></figure></notextile></div>
-We can you this folder to put our favorite stuff in. If that&rsquo;s what you want to do. As you can see the &ldquo;mkdir&rdquo; command took 1 argument that specifies the name of the new directory that you want to create and in this situation we created a new directory named &ldquo;favs&rdquo;. We verify that by using the &ldquo;ls&rdquo; command and seeing the output of that contains &ldquo;favs&rdquo;. If you want you can even go inside your newly created directory by typing:
+You can use this folder to put our favorite stuff in. If that&rsquo;s what you want to do. As you can see the &ldquo;mkdir&rdquo; command took 1 argument that specifies the name of the new directory that you want to create and in this situation we created a new directory named &ldquo;favs&rdquo;. We verify that by using the &ldquo;ls&rdquo; command and seeing the output of that contains &ldquo;favs&rdquo;. If you want you can even go inside your newly created directory by typing:
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>cd favs</span></code></pre></td></tr></table></div></figure></notextile></div>
-However it shouldn&rsquo;t be to surprising that a new directory won&rsquo;t have anything inside of it yet. You can once verify that by typing:
+However it shouldn&rsquo;t be too surprising that a new directory won&rsquo;t have anything inside of it yet. You can once again verify that by typing:
 <div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ls</span></code></pre></td></tr></table></div></figure></notextile></div>
 Which shows all files and folders in that directory (this time nothing will show up).</p>
 
-<p>Get ready for the next post where I show you how to delete files and folders, create new files, and show what&rsquo;s inside of a file. Thanks for reading. Hope to see you on here soon!</p>
+<p>Get ready for the next post where I show you how to delete files and folders, create new files, and show what&rsquo;s inside of a file. All by using a terminal Thanks for reading. Hope to see you on here soon!</p>
 ]]></content>
   </entry>
   
