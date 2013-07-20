@@ -38,7 +38,7 @@ And finally, for today, is the "mkdir" command. This is responsible for creating
 {% codeblock lang:bash %}
 mkdir favs
 {% endcodeblock %}
-You can use this folder to put our favorite stuff in. If that's what you want to do. As you can see the "mkdir" command took 1 argument that specifies the name of the new directory that you want to create and in this situation we created a new directory named "favs". We verify that by using the "ls" command and seeing the output of that contains "favs". If you want you can even go inside your newly created directory by typing:
+You can use this folder to put all your favorite stuff in. If that's what you want to do. As you can see the "mkdir" command took 1 argument that specifies the name of the new directory that you want to create and in this situation we created a new directory named "favs". We verify that by using the "ls" command and seeing the output of that contains "favs". If you want you can even go inside your newly created directory by typing:
 {% codeblock %}
 cd favs
 {% endcodeblock %}
