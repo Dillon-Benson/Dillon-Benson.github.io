@@ -19,7 +19,7 @@ or
 touch bar
 {% endcodeblock %}
 where "bar" would be the name of the newly created file.  
-As you can see the name of the command was "touch" an it has 1 argument specifying the name of the file. In these cases the name of file would be "foo" or "bar".  
+As you can see the name of the command was "touch" and it has 1 argument specifying the name of the file. In these cases the name of file would be "foo" or "bar".  
 Deleting files is pretty straight foward. You do this with the "rm" command. "rm" is short for remove. Just like the "touch" command, "rm" takes 1 argument specifying the name of the file that you wish to delete. Let's say you have a file named "foo". When you use the "ls" command you should see something like this:  
 {% img /images/ls-foo.png %}  
 See the file named "foo". Now you want to delete it. To do that you would just use:
@@ -33,3 +33,25 @@ Like this.
 Now that you got the hang of creating and deleting files, it's time to show you how to delete directories.  
 
 ##Deleting directories
+Removing a directory is just like removing a file. In fact it's the same command, "rm". However, it's time to introduce a new concept to commandss. You know that commands have 0 or more arguments.
+{% codeblock lang:bash %}
+cd foo
+{% endcodeblock %}
+This has a command, "cd", and an argument, "foo". Turns out that commands have another nice features called options and they're a special form of arguments. Options are arguments that are prefixed with "-" or "--". The main purpose of options are to specify how you want a command to be run. Keep in mind however that not all commands have options. It turns out that the "rm" command has a special option for deleting directories. "-rf". This means remove a directory with recursive force. Don't worry about what that means for now. Just know that "-rf" along side of "rm" is used for deleting directories. Let's say our home directory looks something like this:
+{% img /images/foo-directory.png %}
+Notice the "foo" directory? If we want to delete this, all we need to do is issue an "rm" command like this:
+{% codeblock lang:bash %}
+rm -rf foo
+{% endcodeblock %}
+Where "rm" is the remove command, "-rf" the recursive force option we're using, and "foo" being the argument specifying the directory we want to remove.  
+
+##showing what's in a file
+There a nice command called "cat" that's used for showing what's inside of a file. Let's say that sometime in the future when you begin programming your first ruby code you have a file named "hello.rb" (The ".rb" in the file name means it's a ruby file). Now if you want to see what's inside of this just use "cat" with an argument. As you might have already guessed, yes, "cat" takes one argument specifying the name of the file you want to see the content of. So issuing:
+{% codeblock lang:bash %}
+cat hello.rb
+{% endcodeblock %}  
+May result in something that looks like this:  
+{% img /images/cat-hello-rb.png %}
+Below the "cat" command you see ruby code. This is what's inside of the "hello.rb" file. Ruby code!  
+
+I hope this tutorial went good for you. If you have any questions please leave a comment. Make sure you have a good grip on what you've learned so far. We're not done with the terminal tutorials yet. It's crucial you understand how to use it before you begin programming. Thanks for reading. See you soon.
