@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Folders | Tutorial for Maddie]]></title>
   <link href="http://Dillon-Benson.github.io/blog/categories/folders/atom.xml" rel="self"/>
   <link href="http://Dillon-Benson.github.io/"/>
-  <updated>2013-07-19T23:36:57-04:00</updated>
+  <updated>2013-07-22T10:12:37-04:00</updated>
   <id>http://Dillon-Benson.github.io/</id>
   <author>
     <name><![CDATA[Dillon Benson]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[how to use the Terminal (part 2)]]></title>
+    <link href="http://Dillon-Benson.github.io/blog/2013/07/20/how-to-use-the-terminal-part-2/"/>
+    <updated>2013-07-20T13:39:00-04:00</updated>
+    <id>http://Dillon-Benson.github.io/blog/2013/07/20/how-to-use-the-terminal-part-2</id>
+    <content type="html"><![CDATA[<p>Welcome back Maddie! If you haven&rsquo;t read the <a href="http://dillon-benson.github.io/blog/2013/07/18/how-to-use-the-terminal/">first part</a> of this tutorial, I strongly suggest that you do. If you have already read it, then you should be ready for this tutorial. In this post I will cover creation and deletion of files, how to delete directories the right way, and quickly find out what&rsquo;s inside of a file. All this will be done with the power of the terminal. Remember, I strongly advise you to read the <a href="http://dillon-benson.github.io/blog/2013/07/18/how-to-use-the-terminal/">first section</a> before this.</p>
+
+<h2>Creating and deleting files</h2>
+
+<p>Creating and deleting files is an important part in becoming good with the terminal. Let&rsquo;s first start with creating files. Creating files is similar to creating a directory with the &ldquo;mkdir&rdquo; command from the previous section. However instead of using &ldquo;mkdir&rdquo; we use the &ldquo;touch&rdquo; command. The main purpose of &ldquo;touch&rdquo; is to generate a file with whatever name you want. To specify the name of the file you just pass the &ldquo;touch&rdquo; command an argument:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>touch foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+where &ldquo;foo&rdquo; would be the name of the newly created file.<br/>
+or
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>touch bar
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+where &ldquo;bar&rdquo; would be the name of the newly created file.<br/>
+As you can see the name of the command was &ldquo;touch&rdquo; and it has 1 argument specifying the name of the file. In these cases the name of file would be &ldquo;foo&rdquo; or &ldquo;bar&rdquo;.<br/>
+Deleting files is pretty straight foward. You do this with the &ldquo;rm&rdquo; command. &ldquo;rm&rdquo; is short for remove. Just like the &ldquo;touch&rdquo; command, &ldquo;rm&rdquo; takes 1 argument specifying the name of the file that you wish to delete. Let&rsquo;s say you have a file named &ldquo;foo&rdquo;. When you use the &ldquo;ls&rdquo; command you should see something like this:<br/>
+<img src="/images/ls-foo.png"><br/>
+See the file named &ldquo;foo&rdquo;. Now you want to delete it. To do that you would just use:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rm foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+&ldquo;foo&rdquo; is the only argument to the &ldquo;rm&rdquo; command this time.<br/>
+Now when you use the &ldquo;ls&rdquo; command you see it has been deleted and disappeared from the directory.
+<img src="/images/ls-foo-deleted.png">
+Like this.<br/>
+Now that you got the hang of creating and deleting files, it&rsquo;s time to show you how to delete directories.</p>
+
+<h2>Deleting directories</h2>
+
+<p>Removing a directory is just like removing a file. In fact it&rsquo;s the same command, &ldquo;rm&rdquo;. However, it&rsquo;s time to introduce a new concept to commandss. You know that commands have 0 or more arguments.
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="nb">cd </span>foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+This has a command, &ldquo;cd&rdquo;, and an argument, &ldquo;foo&rdquo;. Turns out that commands have another nice features called options and they&rsquo;re a special form of arguments. Options are arguments that are prefixed with &ldquo;&ndash;&rdquo; or &ldquo;&mdash;&rdquo;. The main purpose of options are to specify how you want a command to be run. Keep in mind however that not all commands have options. It turns out that the &ldquo;rm&rdquo; command has a special option for deleting directories. &ldquo;-rf&rdquo;. This means remove a directory with recursive force. Don&rsquo;t worry about what that means for now. Just know that &ldquo;-rf&rdquo; along side of &ldquo;rm&rdquo; is used for deleting directories. Let&rsquo;s say our home directory looks something like this:
+<img src="/images/foo-directory.png">
+Notice the &ldquo;foo&rdquo; directory? If we want to delete this, all we need to do is issue an &ldquo;rm&rdquo; command like this:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rm -rf foo
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Where &ldquo;rm&rdquo; is the remove command, &ldquo;-rf&rdquo; the recursive force option we&rsquo;re using, and &ldquo;foo&rdquo; being the argument specifying the directory we want to remove.</p>
+
+<h2>showing what&rsquo;s in a file</h2>
+
+<p>There a nice command called &ldquo;cat&rdquo; that&rsquo;s used for showing what&rsquo;s inside of a file. Let&rsquo;s say that sometime in the future when you begin programming your first ruby code you have a file named &ldquo;hello.rb&rdquo; (The &ldquo;.rb&rdquo; in the file name means it&rsquo;s a ruby file). Now if you want to see what&rsquo;s inside of this just use &ldquo;cat&rdquo; with an argument. As you might have already guessed, yes, &ldquo;cat&rdquo; takes one argument specifying the name of the file you want to see the content of. So issuing:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cat hello.rb
+</span></code></pre></td></tr></table></div></figure></notextile></div><br/>
+May result in something that looks like this:<br/>
+<img src="/images/cat-hello-rb.png">
+Below the &ldquo;cat&rdquo; command you see ruby code. This is what&rsquo;s inside of the &ldquo;hello.rb&rdquo; file. Ruby code!</p>
+
+<p>I hope this tutorial went good for you. If you have any questions please leave a comment. Make sure you have a good grip on what you&rsquo;ve learned so far. We&rsquo;re not done with the terminal tutorials yet. It&rsquo;s crucial you understand how to use it before you begin programming. Thanks for reading. See you soon.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[how to use the terminal]]></title>
