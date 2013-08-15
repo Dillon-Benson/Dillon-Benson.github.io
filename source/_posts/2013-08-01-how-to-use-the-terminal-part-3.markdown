@@ -3,10 +3,10 @@ layout: post
 title: "How to Use the Terminal (Part 3)"
 date: 2013-08-01 14:01
 comments: true
-categories: 
+categories: ["Terminal", "Commands", "Files", "Folders", "Directories"]
 ---
 
-Welcome! After reading the [first](http://dillon-benson.github.io/blog/2013/07/18/how-to-use-the-terminal/) and [second](http://dillon-benson.github.io/blog/2013/07/20/how-to-use-the-terminal-part-2/) tutorials you should already know what a command is, its arguments, and options. You've learned several commands so far. This post will be your final tutorial on how to use the terminal. In this post you'll learn a few more essential commands.  
+Welcome! After reading the first and second tutorials you should already know what a command is, its arguments, and options. You've learned several commands so far. This post will be your final tutorial on how to use the terminal. In this post you'll learn a few more essential commands.  
 
 ##Renaming files and directories
 Renaming files and directories is easy. The syntax of renaming a directory is the same as that of renaming of file and looks like this:
