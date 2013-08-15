@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Folders | Tutorial for Maddie]]></title>
   <link href="http://Dillon-Benson.github.io/blog/categories/folders/atom.xml" rel="self"/>
   <link href="http://Dillon-Benson.github.io/"/>
-  <updated>2013-08-15T15:20:48-04:00</updated>
+  <updated>2013-08-15T15:35:52-04:00</updated>
   <id>http://Dillon-Benson.github.io/</id>
   <author>
     <name><![CDATA[Dillon Benson]]></name>
@@ -18,7 +18,7 @@
     <link href="http://Dillon-Benson.github.io/blog/2013/08/01/how-to-use-the-terminal-part-3/"/>
     <updated>2013-08-01T14:01:00-04:00</updated>
     <id>http://Dillon-Benson.github.io/blog/2013/08/01/how-to-use-the-terminal-part-3</id>
-    <content type="html"><![CDATA[<p>Welcome! After reading the first and second tutorials you should already know what a command is, its arguments, and options. You&rsquo;ve learned several commands so far. This post will be your final tutorial on how to use the terminal. In this post you&rsquo;ll learn a few more essential commands.</p>
+    <content type="html"><![CDATA[<p>Welcome! After reading the <a href="/blog/2013/07/18/how-to-use-the-terminal/">first</a> and <a href="/blog/2013/07/20/how-to-use-the-terminal-part-2/">second</a> tutorials you should already know what a command is, its arguments, and options. You&rsquo;ve learned several commands so far. This post will be your final tutorial on how to use the terminal. In this post you&rsquo;ll learn a few more essential commands.</p>
 
 <h2>Renaming files and directories</h2>
 
