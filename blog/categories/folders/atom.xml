@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Folders | Tutorial for Maddie]]></title>
   <link href="http://Dillon-Benson.github.io/blog/categories/folders/atom.xml" rel="self"/>
   <link href="http://Dillon-Benson.github.io/"/>
-  <updated>2013-08-14T19:57:07-04:00</updated>
+  <updated>2013-08-15T15:20:48-04:00</updated>
   <id>http://Dillon-Benson.github.io/</id>
   <author>
     <name><![CDATA[Dillon Benson]]></name>
@@ -12,6 +12,66 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Use the Terminal (Part 3)]]></title>
+    <link href="http://Dillon-Benson.github.io/blog/2013/08/01/how-to-use-the-terminal-part-3/"/>
+    <updated>2013-08-01T14:01:00-04:00</updated>
+    <id>http://Dillon-Benson.github.io/blog/2013/08/01/how-to-use-the-terminal-part-3</id>
+    <content type="html"><![CDATA[<p>Welcome! After reading the first and second tutorials you should already know what a command is, its arguments, and options. You&rsquo;ve learned several commands so far. This post will be your final tutorial on how to use the terminal. In this post you&rsquo;ll learn a few more essential commands.</p>
+
+<h2>Renaming files and directories</h2>
+
+<p>Renaming files and directories is easy. The syntax of renaming a directory is the same as that of renaming of file and looks like this:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>mv foo bar
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+As you can see the name of the command we&rsquo;re using here is &ldquo;mv&rdquo; and it has 2 arguments, the file (or directory) to be renamed and the new name for that file (or directory) respectively.</p>
+
+<p>Here&rsquo;s what is happening:
+Say we have a file with the name &ldquo;foo&rdquo;&hellip;<br/>
+<img src="/images/foo-for-mv.png"><br/>
+Now we want to rename that &ldquo;foo&rdquo; file to &ldquo;bar"<br/>
+So we issue an "mv&rdquo; command with &ldquo;foo&rdquo; as the first argument and &ldquo;bar&rdquo; as the second argument. Again Like this:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>mv foo bar
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+After executing this command, you can see that the &ldquo;foo&rdquo; file has been renamed to &ldquo;bar&rdquo; by using &ldquo;ls&rdquo; to see all the files in the current directory:<br/>
+<img src="/images/bar-for-mv.png"><br/>
+Keep in mind that this works for renaming directories as well. This syntax is the same for files and directories.
+That&rsquo;s all there is to renaming things!</p>
+
+<h2>Copying files</h2>
+
+<p>Copying files has the same syntax as renaming files. The one exception is that the second argument is the name of the file you want to copy the first argument to.
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cp foo bar
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+This is saying copy the the file named &ldquo;foo&rdquo; to a newly created file named &ldquo;bar&rdquo;. Note that the first and second arguments should not be the same. This is because 2 or more files in the same directory CANNOT have the same name.<br/>
+Before issuing the &ldquo;cp&rdquo; command you would see something like this:
+<img src="/images/foo-for-mv.png">
+See the file named &ldquo;foo&rdquo;?
+After executing the &ldquo;cp&rdquo; command you should see something like this:
+<img src="/images/bar-for-cp.png">
+Notice how &ldquo;foo&rdquo; and &ldquo;bar&rdquo; are there. This is because you copied &ldquo;foo&rdquo; into &ldquo;bar&rdquo;. Essentially this means you have 2 copies of &ldquo;foo&rdquo; but with the other file named as &ldquo;bar&rdquo;.</p>
+
+<h2>Copying directories</h2>
+
+<p>Remember the &ldquo;rm&rdquo; command for directories? You would have to say:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>rm -rf somedirectory
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Remembering the &ldquo;-rf&rdquo; option to &ldquo;rm&rdquo;, this should have removed the directory. However not remembering it, the terminal would complain that &ldquo;somedirectory&rdquo; is a directory and that you cannot remove a directory without the &ldquo;-rf&rdquo; option. The same goes for copying directories!
+Assuming you have a directory named &ldquo;somedirectory&rdquo;, The syntax of copying a directory will look like this:
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cp -rf somedirectory anotherdirectory
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+Where &ldquo;somedirectory&rdquo; is the directory you want to copy and &ldquo;anotherdirectory&rdquo; is the name of the newly created directory that you want &ldquo;somedirectory&rdquo; to be copied into.
+And that&rsquo;s all there is to that.</p>
+
+<p>Be sure that the last 3 posts make complete sense to you. If they don&rsquo;t please leave a comment or read them over again. In the next post I&rsquo;m going to prepare you for programming in Ruby by setting up some &ldquo;pre-ruby&rdquo; stuff. See you in a few!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[how to use the Terminal (part 2)]]></title>
